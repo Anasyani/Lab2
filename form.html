@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация студента</title>
+</head>
+<body>
+    <h1>Регистрация студента</h1>
+
+    <form id="myForm">
+        <p>
+            <label>Имя:<br>
+                <input type="text" name="username" placeholder="Введите имя" required>
+            </label>
+        </p>
+        <p>
+            <label>Возраст:<br>
+                <input type="number" name="age" min="16" max="100" required>
+            </label>
+        </p>
+        <p>
+            <label>Факультет:<br>
+                <select name="faculty">
+                    <option value="Институт физико-математических наук и информационных технологий">Физико-математических наук и ИТ</option>
+                    <option value="Институт природопользования, территориального развития и градостроительства">Природопользования и градостроительства</option>
+                    <option value="Институт гуманитарных наук и социальных коммуникаций">Гуманитарных наук</option>
+                    <option value="Институт образования">Образования</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="agree" value="да"> Согласен с правилами
+            </label>
+        </p>
+        <p>
+            Форма обучения:<br>
+            <label><input type="radio" name="study_form" value="Очная" checked> Очная</label>
+            <label><input type="radio" name="study_form" value="Заочная"> Заочная</label>
+        </p>
+        <button type="submit">Отправить</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="form.js"></script>
+</body>
+</html>
